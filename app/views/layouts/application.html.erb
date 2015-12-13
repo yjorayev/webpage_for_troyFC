@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Soccer</title>
+  <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js", "application" %>  
+  <%= stylesheet_link_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.css", "application" %>
+
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script>
+  $(function() {
+  	$("#dob").datepicker({dateFormat: 'yy-mm-dd'});
+
+  });
+  
+  </script>
+</head>
+<body>
+<%= render "layouts/messages"%>
+<div id="top">
+	<div id="menu">
+		<ul>
+			<li>
+				<%= link_to root_path, {class: "but1", id: is_active?("main", "pages") } do%>
+					<%=image_tag("images/spacer.gif", width: "56", height: "13")%>
+				<% end %>
+			</li>
+			<li>
+				<%= link_to aboutus_path, {class: "but2", id: is_active?("aboutus", "pages")} do%>
+					<%=image_tag("images/spacer.gif", width: "100", height: "13")%>
+				<% end %>
+			</li>
+			<li>
+				<%= link_to users_path, {class: "but3", id: is_active?("index", "users")} do%>
+					<%=image_tag("images/spacer.gif", width: "74", height: "13")%>
+				<% end %>
+			</li>
+			
+			<li>
+				<%= link_to stats_path, {class: "but5", id: is_active?("stats", "pages")} do%>
+					<%=image_tag("images/spacer.gif", width: "88", height: "13")%>
+				<% end %>
+			</li>
+			
+			<li>
+				<%= link_to contactus_path, {class: "but7", id: is_active?("contactus", "pages")} do%>
+					<%=image_tag("images/spacer.gif", width: "84", height: "13")%>
+				<% end %>
+			</li>
+		</ul>								
+	</div>
+
+</div>
+<div id="header" class="home">
+	<br />	
+</div>
+
+<div id='changingpart'>
+	<%= yield %>
+</div>
+<div class="push"></div>
+
+
+<div id="footer">
+	<ul>
+		Sponsor logos will be listed in here.
+	</ul>
+	<p>Copyright &copy;. All rights reserved. Design is edited version of this link. <a href="http://www.bestfreetemplates.info" target="_blank" title="Best Free Templates">BFT</a></p>				
+</div>
+</body>
+</html>

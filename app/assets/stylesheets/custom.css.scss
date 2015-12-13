@@ -28,7 +28,7 @@ min-height:100%;
 #top{
 width:869px;
 height:70px;
-background-image:image-url(images/menu_bg2.gif);
+background-image:url(images/menu_bg2.gif);
 background-position:top left;
 background-repeat:repeat-x;
 }
@@ -36,13 +36,13 @@ background-repeat:repeat-x;
 #menu{
 width:869px;
 height:70px;
-background-image:image-url(images/top_bg.gif);
+background-image:url(images/top_bg.gif);
 background-position:bottom left;
 background-repeat:no-repeat;
 }
 
 #menu ul{
-background-image:image-url(images/menu_bg.gif);
+background-image:url(images/menu_bg.gif);
 background-position:bottom left;
 background-repeat:no-repeat;
 height:42px;
@@ -53,6 +53,7 @@ text-align: center;
 
 #menu li{
 height:34px;
+//float:left;
 display:inline-block;
 list-style-type:none;
 padding:8px 9px 0 13px;
@@ -67,43 +68,43 @@ float:left;
 .but1{
 background-position:top left;
 background-repeat:no-repeat;
-background-image:image-url(images/but1.jpg);
+background-image:url(images/but1.jpg);
 }
 
 .but2{
 background-position:top left;
 background-repeat:no-repeat;
-background-image:image-url(images/but2.jpg);
+background-image:url(images/but2.jpg);
 }
 
 .but3{
 background-position:top left;
 background-repeat:no-repeat;
-background-image:image-url(images/but3.jpg);
+background-image:url(images/but3.jpg);
 }
 
 .but4{
 background-position:top left;
 background-repeat:no-repeat;
-background-image:image-url(images/but4.jpg);
+background-image:url(images/but4.jpg);
 }
 
 .but5{
 background-position:top left;
 background-repeat:no-repeat;
-background-image:image-url(images/but5.jpg);
+background-image:url(images/but5.jpg);
 }
 
 .but6{
 background-position:top left;
 background-repeat:no-repeat;
-background-image:image-url(images/but6.jpg);
+background-image:url(images/but6.jpg);
 }
 
 .but7{
 background-position:top left;
 background-repeat:no-repeat;
-background-image:image-url(images/but7.jpg);
+background-image:url(images/but7.jpg);
 }
 
 .but1:hover,.but2:hover,.but3:hover,.but2:hover,.but4:hover,.but5:hover,.but6:hover,.but7:hover{background-position:bottom left}
@@ -113,7 +114,7 @@ background-position:bottom left
 
 #header{
 width:869px;
-background-image:image-url(images/photo.jpg);
+background-image:url(images/photo.jpg);
 background-position:top left;
 background-repeat:no-repeat;
 }
@@ -134,7 +135,7 @@ width:869px;
 background-color:#090909;
 overflow:hidden;
 padding:0 0 28px 0;
-background-image:image-url(images/wrapper_bg.gif);
+background-image:url(images/wrapper_bg.gif);
 background-position:bottom left;
 background-repeat:no-repeat
 }
@@ -143,7 +144,7 @@ background-repeat:no-repeat
 padding:11px 0 0 0;
 height:26px;
 margin:0 0 8px 0;
-background-image:image-url(images/title_bg.gif);
+background-image:url(images/title_bg.gif);
 background-position:top left;
 background-repeat:no-repeat;
 }
@@ -225,14 +226,14 @@ width:869px;
 //position:absolute;
 bottom:0px;
 height:47px;
-//background-image:image-url(images/footer_bg.gif);
+//background-image:url(images/footer_bg.gif);
 font-family:Tahoma, sans-serif;
 color:#9A9A9A;
 font-size:10px;
 }
 
 #footer ul{
-//background-image:image-url(images/bot_bg.gif);
+//background-image:url(images/bot_bg.gif);
 width:768px;
 height:13px;
 margin:20px auto 15px auto;

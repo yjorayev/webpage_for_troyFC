@@ -1,3 +1,5 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
 *{
 margin:0px;
 padding:0px;
@@ -16,16 +18,17 @@ body{
 width:869px;
 padding:0 65px;
 margin:0 auto;
-height:100%;
-position:relative
+height:90%;
+position:relative;
+background: none;
 }
 
 html > body{
-height:auto;
 min-height:100%;
 }
 
 #top{
+margin-left:192px;
 width:869px;
 height:70px;
 background-image:url(images/menu_bg2.gif);
@@ -114,14 +117,16 @@ background-position:bottom left
 
 #header{
 width:869px;
-background-image:url(images/photo.jpg);
-background-position:top left;
-background-repeat:no-repeat;
+//background-image:url(images/team.jpg);
+//background-position:top left;
+//background-repeat:no-repeat;
 }
 
 //the picture on top
+
 .home{
-padding:240px 0 0 0
+padding:10px 0 10px 0
+//text-align: center;
 }
 
 
@@ -130,15 +135,6 @@ padding:240px 0 0 0
 margin:8px 0 0 0;
 }
 
-#content{
-width:869px;
-background-color:#090909;
-overflow:hidden;
-padding:0 0 28px 0;
-background-image:url(images/wrapper_bg.gif);
-background-position:bottom left;
-background-repeat:no-repeat
-}
 
 .title{
 padding:11px 0 0 0;
@@ -150,9 +146,11 @@ background-repeat:no-repeat;
 }
 
 #left{
+margin: 0 0 0 0px;
 width:442px;
 float:left;
-padding:0 24px 0 17px
+padding:0 24px 0 57px;
+color: white;
 }
 
 #left div{
@@ -164,6 +162,26 @@ float:left;
 #left p{
 width:192px;
 padding:13px 0 0 0
+}
+
+#left dt{
+  color: yellow;
+  text-align: left;
+  clear: both;
+  margin-right: -60px;
+}
+
+#left dd{
+  margin-left: -20px;
+}
+
+#left dl{
+  margin: 10px 0 0 0px;
+}
+
+#right{
+  color: yellow;
+  margin: 0 0px 0 400px;
 }
 
 .inner_copy{
@@ -216,23 +234,31 @@ width:200px;
 	height: auto !important;
 	height: 100%;
 	margin: 0 auto -77px;
+  background-image:url(images/wrapper_bg.gif);
+  background-position:bottom left;
+  background-repeat:no-repeat;
+  width:869px;
+  background-color:#090909;
+  overflow:hidden;
+  padding:0 0 28px 0;
 }
 .push{
-	height: 77px;
+	height: 100px;
 }
 
-#footer{
+#myfooter{
 width:869px;
-//position:absolute;
 bottom:0px;
-height:47px;
-//background-image:url(images/footer_bg.gif);
+height:100px;
 font-family:Tahoma, sans-serif;
 color:#9A9A9A;
 font-size:10px;
+//display:inline-block;
+margin-left: auto;
+margin-right: auto;
 }
 
-#footer ul{
+#myfooter ul{
 //background-image:url(images/bot_bg.gif);
 width:768px;
 height:13px;
@@ -240,27 +266,27 @@ margin:20px auto 15px auto;
 text-align:center
 }
 
-#footer ul li{
+#myfooter ul li{
 display:inline;
 }
-#footer ul li a{
+#myfooter ul li a{
 color:#9A9A9A;
 text-decoration:none;
 margin:0 9px;
 }
-#footer ul li a:visited{text-decoration:none}
-#footer ul li a:hover{text-decoration:underline}
-#footer p{
+#myfooter ul li a:visited{text-decoration:none}
+#myfooter ul li a:hover{text-decoration:underline}
+#myfooter p{
 width:869px;
 text-align:center;
 font-size:11px;
 }
-#footer p a{
+#myfooter p a{
 color:#CE3200;
 text-decoration:none
 }
-#footer p a:visited{text-decoration:none}
-#footer p a:hover{text-decoration:underline}
+#myfooter p a:visited{text-decoration:none}
+#myfooter p a:hover{text-decoration:underline}
 #about{
 width:412px;
 float:left;
@@ -292,8 +318,6 @@ padding:18px 0 0 0
 
 
 
-
-
 .rwd-table {
   margin: 1em 0;
   tr:hover:not(#firstrow), tr:hover td:empty{
@@ -308,7 +332,7 @@ padding:18px 0 0 0
   th, td {
     margin: .5em 1em;
     text-align: center;
-    color: #F03B0A;
+    color: white;
     width: 550px;
     font-size: 14px;
     font-family: Optima;
@@ -318,4 +342,65 @@ padding:18px 0 0 0
     color: #dd5;
     font-size: 16px;
   }  
+}
+
+
+.stats-table{
+  td{
+    font-size:11px;
+  }
+}
+
+#picture{
+  text-align: center;
+}
+
+.logo{
+  background: inherit;
+}
+
+
+
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+      width: 40%;
+      margin: auto;
+  }
+
+.carousel-control.right, .carousel-control.left {
+  background-image:none;
+  color: grey;
+  visibility: hidden;
+}
+
+.carousel-control.right{
+  right:20%;
+}
+
+.carousel-control.left{
+  left:20%;
+}
+
+
+.carousel-inner{
+  margin-top: 30px;
+}
+.carousel:hover .carousel-control { visibility: visible; }
+.carousel-indicators li { visibility: hidden; }
+
+
+#forfooter {
+  min-height: 100%;
+  margin: 0 auto -40px;
+}
+
+.par{
+  width: 869px;
+  color: white; font-size: 16px;
+  padding: 0 17px 0 10px;
+}
+
+h4{
+  color: yellow;
 }

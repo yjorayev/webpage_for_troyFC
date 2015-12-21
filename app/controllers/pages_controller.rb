@@ -2,7 +2,7 @@ class PagesController < ApplicationController
 	def stats
 	end
 
-	def aboutus
+	def calendar
 	end
 
 	def main

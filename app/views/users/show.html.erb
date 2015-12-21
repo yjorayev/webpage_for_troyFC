@@ -1,1 +1,26 @@
-<h1>Player info will be displayed on this page</h2>
+<div class= "row text-center">
+  <p>
+    <h1><%= @user.firstname %> <%= @user.lastname %></h1>
+  </p>
+  <hr><br>
+  <div class= "col-md-4 col-md-push-2">
+    <font1>User Picture</font1><br><br>
+    <%= image_tag(@user.picture.url,  class: "picture") if @user.picture? %>
+  </div>
+  <div class= "col-md-4 col-md-push-2">
+    <font1>User Information</font1><br><br>
+    <dl class= "dl-horizontal text-left">
+		<dt>Position: </dt><dd><%= @user.position %></dd>
+		<dt>Number: </dt><dd><%= @user.number %></dd>
+		<dt>Date of Birth: </dt><dd><%= @user.dob %></dd>
+		<dt>Email: </dt><dd><%= @user.email %></dd>
+		<dt>Nationality: </dt><dd><%= @user.nationality %></dd>
+		<dt>Major: </dt><dd><%= @user.major %></dd>
+		<dt>Classification: </dt><dd><%= @user.classification %></dd>
+    </dl>
+  </div>
+</div>
+<hr><br>
+
+</div>
+</div>

@@ -1,34 +1,32 @@
-<div class="container">
-	<div class="table-responsive col-md-11">
-		<table class="rwd-table">
-			<tr id="firstrow">
-				<th>Picture</th>
-				<th>Name</th>
-				<th>Position</th>
-				<th>Number</th>
-				<th>Date of Birth</th>
-				<th>Nationality</th>
-				<th>Major</th>
-				<th>Class</th>
+<div>
+	<table class="rwd-table">
+		<tr id="firstrow">
+			<th>Picture</th>
+			<th>Name</th>
+			<th>Position</th>
+			<th>Number</th>
+			<th>Date of Birth</th>
+			<th>Nationality</th>
+			<th>Major</th>
+			<th>Class</th>
+		</tr>
+		<% @users.each do |user| %>
+			<tr onclick="location.href='<%= user_path(user) %>'">
+				<td>
+					<section>
+						<%= image_tag(user.picture.url, size: "35", class: "picture") if user.picture? %>
+					</section>
+				</td>
+				<td><%= [user.firstname, user.lastname].join(" ")%></td>
+				<td><%= user.position%></td>
+				<td><%= user.number%></td>
+				<td><%= user.dob%></td>
+				<td><%= user.nationality%></td>
+				
+				<td><%= user.major%></td>
+				<td><%= user.classification%></td>
 			</tr>
-			<% @users.each do |user| %>
-				<tr onclick="location.href='<%= user_path(user) %>'">
-					<td>
-						<section>
-							<%= image_tag(user.picture.url, size: "35", class: "picture") if user.picture? %>
-						</section>
-					</td>
-					<td><%= [user.firstname, user.lastname].join(" ")%></td>
-					<td><%= user.position%></td>
-					<td><%= user.number%></td>
-					<td><%= user.dob%></td>
-					<td><%= user.nationality%></td>
-					
-					<td><%= user.major%></td>
-					<td><%= user.classification%></td>
-				</tr>
-			<% end %>
-		</table>
-	</div>
+		<% end %>
+	</table>
 </div>
 <center><%= will_paginate %></center>

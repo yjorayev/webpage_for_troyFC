@@ -15,7 +15,7 @@ background-color:#030303;
 }
 
 body{
-width:869px;
+//width:869px;
 padding:0 65px;
 margin:0 auto;
 height:90%;
@@ -28,9 +28,9 @@ min-height:100%;
 }
 
 #top{
-margin-left:190px;
 width:869px;
 height:70px;
+margin: auto;
 background-image:url(images/menu_bg2.gif);
 background-position:top left;
 background-repeat:repeat-x;
@@ -117,9 +117,6 @@ background-position:bottom left
 
 #header{
 width:869px;
-//background-image:url(images/team.jpg);
-//background-position:top left;
-//background-repeat:no-repeat;
 }
 
 //the picture on top
@@ -249,14 +246,16 @@ width:200px;
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
-	margin: 0 0 -77px 190px;
+	//margin: 0 0 -77px 190px;
+  margin: auto;
+  margin-bottom: -77px;
+
   background-image:url(images/wrapper_bg.gif);
   background-position:bottom left;
   background-repeat:no-repeat;
   width:869px;
   background-color:#090909;
   overflow:hidden;
-  padding:0 0 28px 0;
 }
 .push{
 	height: 100px;
@@ -269,8 +268,7 @@ height:100px;
 font-family:Tahoma, sans-serif;
 color:#9A9A9A;
 font-size:10px;
-margin-left: 180px;
-margin-right: auto;
+margin: auto;
 }
 
 #myfooter ul{
@@ -372,6 +370,7 @@ padding:18px 0 0 0
 
 .logo{
   background: inherit;
+  margin-top: -20px;
 }
 
 

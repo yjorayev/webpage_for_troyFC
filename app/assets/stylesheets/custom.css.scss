@@ -45,21 +45,22 @@ background-repeat:no-repeat;
 }
 
 #menu ul{
-background-image:url(images/menu_bg.gif);
+background-image:url(images/bot_bg.gif);
 background-position:bottom left;
 background-repeat:no-repeat;
 height:42px;
-width:768px;
+width:700px;
 margin:0 auto;
+padding-left: 25px;
 text-align: center;
+border-radius: 12px;
 }
 
 #menu li{
 height:34px;
-//float:left;
 display:inline-block;
 list-style-type:none;
-padding:8px 9px 0 13px;
+padding:8px 9px 0 9px;
 }
 
 #menu li a{
@@ -96,6 +97,7 @@ background-image:url(images/but4.jpg);
 background-position:top left;
 background-repeat:no-repeat;
 background-image:url(images/but5.jpg);
+margin-left: -60%;
 }
 
 .but6{
@@ -108,6 +110,7 @@ background-image:url(images/but6.jpg);
 background-position:top left;
 background-repeat:no-repeat;
 background-image:url(images/but7.jpg);
+margin-left: -40%;
 }
 
 .but1:hover,.but2:hover,.but3:hover,.but2:hover,.but4:hover,.but5:hover,.but6:hover,.but7:hover{background-position:bottom left}
@@ -371,6 +374,7 @@ padding:18px 0 0 0
 .logo{
   background: inherit;
   margin-top: -20px;
+  margin-left: -12%;
 }
 
 

@@ -24,8 +24,20 @@
 		<div id="menu">
 			<ul>
 				<li>
+					<%= link_to users_path, {class: "but3", id: is_active?("index", "users")} do%>
+						<%=image_tag("images/spacer.gif", width: "74", height: "13")%>
+					<% end %>
+				</li>
+
+				<li>
 					<%= link_to calendar_path, {class: "but4", id: is_active?("calendar", "pages")} do%>
 						<%=image_tag("images/spacer.gif", width: "123", height: "13")%>
+					<% end %>
+				</li>	
+				
+				<li>
+					<%= link_to root_path, {class: "logo"} do%>
+						<%=image_tag("images/logo.png", width: "200", height: "107")%>
 					<% end %>
 				</li>
 
@@ -33,19 +45,7 @@
 					<%= link_to stats_path, {class: "but5", id: is_active?("stats", "pages")} do%>
 						<%=image_tag("images/spacer.gif", width: "88", height: "13")%>
 					<% end %>
-				</li>
-				
-				<li>
-					<%= link_to root_path, {class: "logo"} do%>
-						<%=image_tag("images/logo.png", width: "200", height: "107")%>
-					<% end %>
 				</li>				
-
-				<li>
-					<%= link_to users_path, {class: "but3", id: is_active?("index", "users")} do%>
-						<%=image_tag("images/spacer.gif", width: "74", height: "13")%>
-					<% end %>
-				</li>
 				
 				<li>
 					<%= link_to contactus_path, {class: "but7", id: is_active?("contactus", "pages")} do%>

@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Troy University Men's Fútbol Club</title>
-  <meta name="Troy University Men's Fútbol Club" content="Troy University Men's Fútbol Club, Soccer Club, NIRSA, College Soccer">
+  <title>Troy University Men's Fútbol Club. </title>
+  <meta name="Description" content="Troy University Men's Fútbol Club, Soccer Club, NIRSA, College Soccer, Troy University, Intramural Sports">
   <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js", "application" %>  
   <%= stylesheet_link_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.css", "application" %>
 
   <%= csrf_meta_tags %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <script>
-  $(function() {
-  	$("#dob").datepicker({dateFormat: 'yy-mm-dd'});
-
-  });
   
+  <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-72006643-1', 'auto');
+	  ga('send', 'pageview');
+
+
+	  $(function() {
+	  	$("#dob").datepicker({dateFormat: 'yy-mm-dd'});
+
+	  });
   </script>
 </head>
 <body class="col-md-12">
